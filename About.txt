@@ -1,0 +1,148 @@
+# 🚀 AI Job Assistant — Project Overview
+
+## 📌 Objective
+
+The AI Job Assistant is an end-to-end AI-powered application designed to analyze a candidate’s resume and compare it with a given job description to provide actionable insights.
+The goal is to help users improve their chances of getting shortlisted by identifying skill gaps and offering targeted suggestions.
+
+---
+
+## 🧠 Core Functionality
+
+### 1. Resume Ingestion
+
+* Accepts resume in PDF format
+* Extracts raw text from the document
+* Converts unstructured resume → usable data
+
+---
+
+### 2. Skill & Information Extraction
+
+* Uses AI to analyze resume content
+* Identifies:
+
+  * Technical skills
+  * Tools & technologies
+  * Experience level
+
+---
+
+### 3. Job Description Analysis
+
+* Accepts job description input (text)
+* Understands required skills and expectations
+
+---
+
+### 4. Matching Engine
+
+* Compares resume with job description
+* Outputs:
+
+  * Match score (0–100)
+  * Missing skills
+  * Strength areas
+
+---
+
+### 5. Recommendation System
+
+* Generates actionable suggestions:
+
+  * Skills to learn
+  * Resume improvements
+  * Project recommendations
+
+---
+
+## 🏗️ System Architecture
+
+User (UI - Streamlit)
+↓
+FastAPI Backend
+↓
+AI Processing Layer (LLM)
+↓
+Response (Structured Output)
+
+---
+
+## ⚙️ Tech Stack
+
+### Backend
+
+* Python
+* FastAPI (API development)
+
+### AI Layer
+
+* Hugging Face / LLM APIs
+* Prompt engineering for structured output
+
+### Data Processing
+
+* pdfplumber (resume text extraction)
+
+### Frontend
+
+* Streamlit (interactive UI)
+
+### Dev Tools
+
+* Git & GitHub (version control)
+* Render (deployment)
+
+---
+
+## 🔄 Workflow
+
+1. User uploads resume
+2. System extracts text
+3. User provides job description
+4. AI analyzes both inputs
+5. System generates:
+
+   * Match score
+   * Missing skills
+   * Suggestions
+
+---
+
+## 🎯 Key Highlights
+
+* End-to-end AI application (not just model usage)
+* Real-world problem solving (job matching)
+* Structured AI outputs (JSON-like responses)
+* Modular backend architecture
+* Deployable and scalable design
+
+---
+
+## 🚀 Use Cases
+
+* Job seekers optimizing resumes
+* Students preparing for placements
+* Career guidance platforms
+
+---
+
+## 📊 Future Enhancements
+
+* Resume rewriting automation
+* Multi-job comparison
+* User authentication & history
+* Vector database for deeper analysis
+
+---
+
+## 🧠 Summary
+
+This project demonstrates the ability to:
+
+* Build AI-powered backend systems
+* Integrate LLMs into real applications
+* Design user-focused features
+* Deploy full-stack AI products
+
+👉 It reflects practical skills required for AI/ML and backend roles.
