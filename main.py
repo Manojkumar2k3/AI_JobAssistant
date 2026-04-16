@@ -10,10 +10,6 @@ app = FastAPI()
 def home():
     return{"message":"server working."}
 
-'''@app.post("/upload-resume")
-async def upload_resume(file: UploadFile = File(...)):
-    text = extract_text_from_pdf(file.file)
-    return {"text": text}'''
 
 @app.post("/analyze-resume")
 async def analyze_resume(file: UploadFile = File(...)):
@@ -21,11 +17,6 @@ async def analyze_resume(file: UploadFile = File(...)):
     result = extract_skills(text)
     return {"analysis": result}
 
-'''@app.post("/match-job")
-async def match_job(req: JDRequest, file: UploadFile = File(...)):
-    resume_text = extract_text_from_pdf(file.file)
-    result = match_resume_with_jd(resume_text, req.job_description)
-    return {"result": result}'''
 
 @app.post("/match-job")
 async def match_job(
