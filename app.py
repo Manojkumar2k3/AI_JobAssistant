@@ -72,7 +72,7 @@ if st.button("Analyze"):
 
         try:
             response = requests.post(
-                "http://127.0.0.1:8000/match-job",
+                "https://ai-jobassistant.onrender.com/match-job",
                 files={"file": uploaded_file},
                 data={"job_description": job_description}
             )
