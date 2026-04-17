@@ -18,12 +18,13 @@ async def analyze_resume(file: UploadFile = File(...)):
     return {"analysis": result}
 
 
-@app.post("/match-job")
-async def match_job(
+@app.post("/match-job") #API end-point
+#Taking User input 
+async def match_job( 
     job_description: str = Form(...),
     file: UploadFile = File(...)
 ):
-    resume_text = extract_text_from_pdf(file.file)
-    result = match_resume_with_jd(resume_text, job_description)
-    return {"result": result} 
+    resume_text = extract_text_from_pdf(file.file) #Resume Parsing
+    result = match_resume_with_jd(resume_text, job_description) # Resume Matching(AI)
+    return {"result": result} # Display Result
 
