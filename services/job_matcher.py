@@ -44,7 +44,7 @@ Job Description:
 
         raw_output = response.choices[0].message.content
 
-        # 🔥 CLEANING (robust)
+        # CLEANING (Robust)
         cleaned = raw_output.strip()
 
         # Remove markdown ``` blocks
