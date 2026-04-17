@@ -17,9 +17,9 @@ async def analyze_resume(file: UploadFile = File(...)):
     result = extract_skills(text)
     return {"analysis": result}
 
-
-@app.post("/match-job") #API end-point
-#Taking User input 
+# API end-point
+@app.post("/match-job") 
+# User input 
 async def match_job( 
     job_description: str = Form(...),
     file: UploadFile = File(...)
